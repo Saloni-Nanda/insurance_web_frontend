@@ -85,7 +85,7 @@ const HeroSection: React.FC = () => {
           className={`
             text-lg sm:text-xl text-gray-700 mb-12 
             font-light leading-relaxed max-w-2xl mx-auto
-            transition-all duration-1000 ease-out delay-300 text-justify
+            transition-all duration-1000 ease-out delay-300 text-center
             drop-shadow-sm
             ${isVisible 
               ? 'translate-x-0 opacity-100' 
