@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +26,6 @@ const Navbar: React.FC = () => {
     }, [location.pathname]);
 
     const menuSections = [
-        { id: 'home', title: 'HOME' },
         { id: 'about', title: 'ABOUT US' },
         { id: 'service', title: 'SERVICES' },
         { id: 'contact', title: 'CONTACT US' },
@@ -38,9 +37,11 @@ const Navbar: React.FC = () => {
                 <div className="w-full mx-auto px-4 sm:px-4 lg:px-16">
                     <div className="flex items-center justify-between py-2">
                         {/* Logo Section */}
+                        <Link to='/'>
                         <div className="flex items-center space-x-2">
                             <img src="/image.png" alt="Logo" className="h-12 w-auto" />
                         </div>
+                        </Link>
 
                         {/* Desktop Navigation (Right aligned) */}
                         <nav className="hidden md:flex items-center space-x-8 ml-auto">
