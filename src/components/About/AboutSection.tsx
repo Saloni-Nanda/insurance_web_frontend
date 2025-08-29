@@ -135,7 +135,7 @@ const AboutSection: React.FC = () => {
 
                     <div
                         ref={scrollContainerRef}
-                        className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
+                        className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 w-full max-w-5xl mx-auto"
                         style={{ scrollBehavior: 'smooth' }}
                     >
                         {cards.map((card, index) => {

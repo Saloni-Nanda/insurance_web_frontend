@@ -40,7 +40,7 @@ const HeroSection2 = () => {
                 id="leadership-section"
                 className="py-20 bg-gray-100"
             >
-                <div className="px-4 sm:px-4 lg:px-16 mx-auto">
+                <div className="px-4 sm:px-4 lg:px-16 mx-auto w-full max-w-7xl">
                     {/* Section Title */}
                     <div className="text-center mb-16">
                         <h2
