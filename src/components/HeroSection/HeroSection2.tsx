@@ -1,9 +1,8 @@
-import { Target, Users } from "lucide-react"
+
 import { useEffect, useState } from "react";
 
 const HeroSection2 = () => {
     const [isLeadershipVisible, setIsLeadershipVisible] = useState<boolean>(false);
-    const [scrollOffset, setScrollOffset] = useState<number>(0);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,11 +16,7 @@ const HeroSection2 = () => {
                     setIsLeadershipVisible(true);
                 }
 
-                // Calculate scroll offset for icon movement when section is visible
-                if (isInView) {
-                    const scrollProgress = Math.max(0, Math.min(1, (window.innerHeight * 0.8 - rect.top) / (window.innerHeight * 0.8)));
-                    setScrollOffset(scrollProgress * 100); // 0 to 100 based on scroll progress
-                }
+               
             }
         };
 
@@ -108,37 +103,7 @@ const HeroSection2 = () => {
                                         className="w-full h-full object-cover rounded-lg"
                                     />
 
-                                    {/* Accent Elements with Scroll-Based Movement */}
-                                    <div
-                                        className={`
-                                            absolute -top-4 -right-4 w-12 h-12 bg-[#B99D54] rounded-full 
-                                            flex items-center justify-center shadow-md
-                                            transition-opacity duration-1000 ease-out delay-1000
-                                            ${isLeadershipVisible ? 'opacity-100' : 'opacity-0'}
-                                        `}
-                                        style={{
-                                            transform: isLeadershipVisible
-                                                ? `translateX(${scrollOffset * -1.2}px)`
-                                                : 'translateX(300px)'
-                                        }}
-                                    >
-                                        <Target size={24} className="text-white" strokeWidth={2} />
-                                    </div>
-                                    <div
-                                        className={`
-                                            absolute -bottom-4 -left-4 w-12 h-12 bg-[#1B2951] rounded-full 
-                                            flex items-center justify-center shadow-md
-                                            transition-opacity duration-1000 ease-out delay-1200
-                                            ${isLeadershipVisible ? 'opacity-100' : 'opacity-0'}
-                                        `}
-                                        style={{
-                                            transform: isLeadershipVisible
-                                                ? `translateX(${-scrollOffset * -1.2}px)`
-                                                : 'translateX(-300px)'
-                                        }}
-                                    >
-                                        <Users size={24} className="text-white" strokeWidth={2} />
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
