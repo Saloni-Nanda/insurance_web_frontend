@@ -22,13 +22,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white text-black py-12 px-4 sm:px-4 lg:px-16 border-t border-gray-200 relative">
+    <footer className="bg-white text-black pt-12 pb-7 px-4 sm:px-4 lg:px-32 border-t border-gray-200 relative">
       <div className=" mx-auto">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-16 mb-8">
           
           {/* Company Info */}
-          <div className="lg:col-span-2">
+          <div className="md:col-span-1 lg:col-span-2">
             <h3 
               className="text-xl font-bold mb-6 text-[#B99D54] leading-tight tracking-tight"
               style={{ fontFamily: "'Roboto', serif" }}
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className='md:col-span-1 lg:col-span-1'>
             <h4 
               className="text-lg font-bold mb-6 text-[#B99D54]"
               style={{ fontFamily: "'Roboto', serif" }}
@@ -84,14 +84,14 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className='md:col-span-1 lg:col-span-1'>
             <h4 
               className="text-lg font-bold mb-6 text-[#B99D54]"
               style={{ fontFamily: "'Roboto', serif" }}
             >
               Contact Info
             </h4>
-            <div className="space-y-4">
+            <div className="space-y-4 ">
               <div className="flex items-center space-x-3">
                 <svg className="w-5 h-5 text-[#B99D54] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
@@ -139,7 +139,7 @@ const Footer = () => {
                 Follow us:
               </span>
               
-              <a href="https://linkedin.com/company/rbghr" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/company/rbg-hr-services-llp/?viewAsMember=true" target="_blank" rel="noopener noreferrer"
                 className="text-black hover:text-[#B99D54] transition-colors duration-300"
                 aria-label="Follow us on LinkedIn"
               >
@@ -148,7 +148,7 @@ const Footer = () => {
                 </svg>
               </a>
 
-              <a href="https://facebook.com/rbghr" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.facebook.com/rbghr" target="_blank" rel="noopener noreferrer"
                 className="text-black hover:text-[#B99D54] transition-colors duration-300"
                 aria-label="Follow us on Facebook"
               >

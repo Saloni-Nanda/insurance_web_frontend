@@ -11,7 +11,7 @@ const HeroSection2 = () => {
             if (leadershipSection) {
                 const rect = leadershipSection.getBoundingClientRect();
                 const isInView = rect.top < window.innerHeight * 0.8;
-                
+
                 // Set visibility
                 if (isInView && !isLeadershipVisible) {
                     setIsLeadershipVisible(true);
@@ -35,7 +35,7 @@ const HeroSection2 = () => {
 
     return (
         <div>
-          
+
             <section
                 id="leadership-section"
                 className="py-20 bg-gray-100"
@@ -92,7 +92,7 @@ const HeroSection2 = () => {
                         <div
                             className={`
     flex justify-center lg:justify-end
-    transition-all duration-1000 ease-out delay-600 mr-24
+    transition-all duration-1000 ease-out delay-600 mr-0 lg:mr-24
     ${isLeadershipVisible
                                     ? 'translate-x-0 opacity-100'
                                     : '-translate-x-full opacity-0'
@@ -109,7 +109,7 @@ const HeroSection2 = () => {
                                     />
 
                                     {/* Accent Elements with Scroll-Based Movement */}
-                                    <div 
+                                    <div
                                         className={`
                                             absolute -top-4 -right-4 w-12 h-12 bg-[#B99D54] rounded-full 
                                             flex items-center justify-center shadow-md
@@ -117,14 +117,14 @@ const HeroSection2 = () => {
                                             ${isLeadershipVisible ? 'opacity-100' : 'opacity-0'}
                                         `}
                                         style={{
-                                            transform: isLeadershipVisible 
-                                                ? `translateX(${scrollOffset * 1.2}px)` 
-                                                : 'translateX(200px)'
+                                            transform: isLeadershipVisible
+                                                ? `translateX(${scrollOffset * -1.2}px)`
+                                                : 'translateX(300px)'
                                         }}
                                     >
                                         <Target size={24} className="text-white" strokeWidth={2} />
                                     </div>
-                                    <div 
+                                    <div
                                         className={`
                                             absolute -bottom-4 -left-4 w-12 h-12 bg-[#1B2951] rounded-full 
                                             flex items-center justify-center shadow-md
@@ -132,9 +132,9 @@ const HeroSection2 = () => {
                                             ${isLeadershipVisible ? 'opacity-100' : 'opacity-0'}
                                         `}
                                         style={{
-                                            transform: isLeadershipVisible 
-                                                ? `translateX(${-scrollOffset * 1.2}px)` 
-                                                : 'translateX(-200px)'
+                                            transform: isLeadershipVisible
+                                                ? `translateX(${-scrollOffset * -1.2}px)`
+                                                : 'translateX(-300px)'
                                         }}
                                     >
                                         <Users size={24} className="text-white" strokeWidth={2} />

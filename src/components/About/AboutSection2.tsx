@@ -68,7 +68,7 @@ const AboutSection2: React.FC = () => {
         
         <div className="relative">
           <div className="pl-8 relative">
-            <div className={`bg-gray-50 p-8 rounded-lg shadow-sm border-l-4 slide-in-mission ${isVisible ? 'visible' : ''}`} 
+            <div className={`text-center bg-gray-50 p-8 rounded-lg shadow-sm border-l-4 slide-in-mission ${isVisible ? 'visible' : ''}`} 
                  style={{ borderLeftColor: '#1B2951', transitionDelay: '0.2s' }}>
               <p className="text-xl text-black leading-relaxed font-medium">
                 To connect insurers with the 

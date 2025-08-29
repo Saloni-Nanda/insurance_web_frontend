@@ -71,7 +71,7 @@ const ServiceSection3: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-white py-16 px-6">
+    <div className="bg-white pb-6 px-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
         <div 

@@ -68,7 +68,7 @@ const HeroSection3= () => {
           </Link>
         </div>
 
-        {/* Subtle animation elements */}
+        {/* Subtle animation elements
         <div className="absolute inset-0 pointer-events-none">
           <div 
             className={`
@@ -89,7 +89,7 @@ const HeroSection3= () => {
               animationDelay: '1s'
             }}
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Additional subtle background gradient overlay */}
