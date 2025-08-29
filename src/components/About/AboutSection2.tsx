@@ -24,7 +24,7 @@ const AboutSection2: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8" ref={sectionRef}>
+    <section className="bg-white  px-4 sm:px-6 lg:px-8" ref={sectionRef}>
       <style>{`
         .slide-in-card {
           opacity: 0;
