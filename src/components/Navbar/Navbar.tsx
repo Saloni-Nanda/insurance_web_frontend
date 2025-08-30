@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
                         {/* Logo Section */}
                         <Link to='/'>
                         <div className="flex items-center space-x-2">
-                            <img src="/image.png" alt="Logo" className="h-12 w-auto" />
+                            <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
                         </div>
                         </Link>
 
