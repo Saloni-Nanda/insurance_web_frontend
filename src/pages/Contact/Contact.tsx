@@ -229,7 +229,7 @@ leadership hiring at 10% of standard cost.
           {/* Left Content - Form */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-xl p-6 shadow-md border border-[#B99D54]/20 h-full">
-              <h2 className="text-2xl font-semibold text-[#1B2951] mb-4 text-center">
+              <h2 className="text-3xl font-semibold text-[#1B2951] mb-4 text-center">
                 Get In Touch
               </h2>
 
@@ -238,7 +238,7 @@ leadership hiring at 10% of standard cost.
               <div className="space-y-3">
                 {/* Full Name */}
                 <div className="relative">
-                  <label className="block text-[#1B2951] font-medium mb-1 text-xs uppercase tracking-wide">
+                  <label className="block text-[#1B2951] font-bold mb-1 text-xs uppercase tracking-wide">
                     Full Name *
                   </label>
                   <div className="relative">
@@ -259,7 +259,7 @@ leadership hiring at 10% of standard cost.
 
                 {/* Email */}
                 <div className="relative">
-                  <label className="block text-[#1B2951] font-medium mb-1 text-xs uppercase tracking-wide">
+                  <label className="block text-[#1B2951] font-bold mb-1 text-xs uppercase tracking-wide">
                     Work Email *
                   </label>
                   <div className="relative">
@@ -280,7 +280,7 @@ leadership hiring at 10% of standard cost.
 
                 {/* Company */}
                 <div className="relative">
-                  <label className="block text-[#1B2951] font-medium mb-1 text-xs uppercase tracking-wide">
+                  <label className="block text-[#1B2951] font-bold mb-1 text-xs uppercase tracking-wide">
                     Company
                   </label>
                   <div className="relative">
@@ -298,7 +298,7 @@ leadership hiring at 10% of standard cost.
 
                 {/* Message */}
                 <div className="relative">
-                  <label className="block text-[#1B2951] font-medium mb-1 text-xs uppercase tracking-wide">
+                  <label className="block text-[#1B2951] font-bold mb-1 text-xs uppercase tracking-wide">
                     Message *
                   </label>
                   <div className="relative">
