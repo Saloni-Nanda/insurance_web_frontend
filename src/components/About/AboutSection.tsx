@@ -5,22 +5,10 @@ const AboutSection: React.FC = () => {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const sectionRef = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(false);
+    const [isPaused, setIsPaused] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (scrollContainerRef.current) {
-                const scrollContainer = scrollContainerRef.current;
-                const rect = scrollContainer.getBoundingClientRect();
-                const windowHeight = window.innerHeight;
-
-                // Check if the container is in viewport
-                if (rect.top < windowHeight && rect.bottom > 0) {
-                    const scrollProgress = Math.max(0, Math.min(1, (windowHeight - rect.top) / (windowHeight + rect.height)));
-                    const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-                    scrollContainer.scrollLeft = scrollProgress * maxScroll;
-                }
-            }
-
             // Check if section is visible for animation
             if (sectionRef.current) {
                 const rect = sectionRef.current.getBoundingClientRect();
@@ -75,6 +63,9 @@ const AboutSection: React.FC = () => {
         }
     ];
 
+    // Duplicate cards for seamless infinite scroll
+    const duplicatedCards = [...cards, ...cards];
+
     return (
         <section className="mt-28 md:mt-24 bg-white py-16 px-4 sm:px-6 lg:px-16">
             <style>{`
@@ -107,6 +98,23 @@ const AboutSection: React.FC = () => {
           opacity: 1;
           transform: translateX(0);
         }
+
+        .continuous-scroll {
+          animation: scroll 20s linear infinite;
+        }
+
+        .continuous-scroll.paused {
+          animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
       `}</style>
             <div className="w-full mx-auto">
 
@@ -133,60 +141,63 @@ const AboutSection: React.FC = () => {
                         </p>
                     </div>
 
-                    <div
-                        ref={scrollContainerRef}
-                        className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 w-full max-w-5xl mx-auto"
-                        style={{ scrollBehavior: 'smooth' }}
-                    >
-                        {cards.map((card, index) => {
-                            const Icon = card.icon;
-                            return (
-                                <div key={index} className="flex-shrink-0 w-80">
-                                    <div className={`group hover:transform hover:-translate-y-2 transition-all duration-300 h-full slide-in-card ${isVisible ? 'visible' : ''}`}
-                                        style={{ transitionDelay: `${0.4 + index * 0.1}s` }}>
-                                        <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                                            <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6 mx-auto" style={{ backgroundColor: card.bgColor }}>
-                                                <Icon className="w-8 h-8 text-white" />
-                                            </div>
-                                            <h4 className="text-2xl font-bold text-black mb-4 text-center">{card.title}</h4>
-                                            <div className="flex-grow">
-                                                <p className="text-gray-700 text-center leading-relaxed">
-                                                    {card.title === 'Insurance Focused' && (
-                                                        <>
-                                                            <span className="font-semibold" style={{ color: '#1B2951' }}>100% specialization in life, general, and health insurance, along with brokers and intermediaries.</span> 
-                                                        </>
-                                                    )}
-                                                    {card.title === 'Proven Experience' && (
-                                                        <>
-                                                         <span className="font-semibold" style={{ color: '#1B2951' }}>Over a decade  of expertise with frontline to CXO-level hiring.</span> 
-                                                           
-                                                        </>
-                                                    )}
-                                                    {card.title === 'Speed & Accuracy' && (
-                                                        <>
-                                                        <span className="font-semibold" style={{ color: '#1B2951' }}>Structured processes and an active talent network for faster closures.</span> 
-                                                           
-                                                        </>
-                                                    )}
-                                                    {card.title === 'Pan-India Reach' && (
-                                                        <>
-                                                         <span className="font-semibold" style={{ color: '#1B2951' }}> Hiring capability across metros and tier-2/3 cities</span> 
-                                                            
-                                                        </>
-                                                    )}
-                                                    {card.title === 'Affordable Leadership Hiring' && (
-                                                        <>
-                                                        <span className="font-semibold" style={{ color: '#1B2951' }}>Retainer model at 1% of CTC</span> 
-                                                           
-                                                        </>
-                                                    )}
-                                                </p>
+                    <div className="overflow-hidden w-full  mx-auto">
+                        <div
+                            ref={scrollContainerRef}
+                            className={`flex gap-6 w-fit ${isVisible ? 'continuous-scroll' : ''} ${isPaused ? 'paused' : ''}`}
+                            onMouseEnter={() => setIsPaused(true)}
+                            onMouseLeave={() => setIsPaused(false)}
+                        >
+                            {duplicatedCards.map((card, index) => {
+                                const Icon = card.icon;
+                                return (
+                                    <div key={index} className="flex-shrink-0 w-80">
+                                        <div className={`group hover:transform hover:-translate-y-2 transition-all duration-300 h-full slide-in-card ${isVisible ? 'visible' : ''}`}
+                                            style={{ transitionDelay: `${0.4 + (index % cards.length) * 0.1}s` }}>
+                                            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                                                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6 mx-auto" style={{ backgroundColor: card.bgColor }}>
+                                                    <Icon className="w-8 h-8 text-white" />
+                                                </div>
+                                                <h4 className="text-2xl font-bold text-black mb-4 text-center">{card.title}</h4>
+                                                <div className="flex-grow">
+                                                    <p className="text-gray-700 text-center leading-relaxed">
+                                                        {card.title === 'Insurance Focused' && (
+                                                            <>
+                                                                <span className="font-semibold" style={{ color: '#1B2951' }}>100% specialization in life, general, and health insurance, along with brokers and intermediaries.</span> 
+                                                            </>
+                                                        )}
+                                                        {card.title === 'Proven Experience' && (
+                                                            <>
+                                                             <span className="font-semibold" style={{ color: '#1B2951' }}>Over a decade  of expertise with frontline to CXO-level hiring.</span> 
+                                                               
+                                                            </>
+                                                        )}
+                                                        {card.title === 'Speed & Accuracy' && (
+                                                            <>
+                                                            <span className="font-semibold" style={{ color: '#1B2951' }}>Structured processes and an active talent network for faster closures.</span> 
+                                                               
+                                                            </>
+                                                        )}
+                                                        {card.title === 'Pan-India Reach' && (
+                                                            <>
+                                                             <span className="font-semibold" style={{ color: '#1B2951' }}> Hiring capability across metros and tier-2/3 cities</span> 
+                                                                
+                                                            </>
+                                                        )}
+                                                        {card.title === 'Affordable Leadership Hiring' && (
+                                                            <>
+                                                            <span className="font-semibold" style={{ color: '#1B2951' }}>Retainer model at 1% of CTC</span> 
+                                                               
+                                                            </>
+                                                        )}
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            );
-                        })}
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
 
