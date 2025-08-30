@@ -84,7 +84,7 @@ const HeroSection: React.FC = () => {
         <p 
           className={`
             text-lg sm:text-xl text-black mb-12 
-            font-semibold leading-relaxed max-w-8xl mx-auto
+            font-bold leading-relaxed max-w-8xl mx-auto
             transition-all duration-1000 ease-out delay-300 text-center
             drop-shadow-sm
             ${isVisible 
@@ -110,20 +110,7 @@ const HeroSection: React.FC = () => {
             }
           `}
         >
-          <Link to='/contact'>
-            <button 
-              className="
-                px-8 py-3.5 bg-[#1B2951] text-white border border-[#1B2951]
-                text-sm font-semibold tracking-widest uppercase
-                transition-all duration-300 ease-in-out
-                hover:bg-white hover:border-[#1B2951] hover:text-[#1B2951] hover:scale-105
-                min-w-[140px] drop-shadow-lg
-              "
-              style={{ fontFamily: "'Roboto', serif" }}
-            >
-              Hire With Us
-            </button>
-          </Link>
+         
           <Link to='/service'>
             <button 
               className="

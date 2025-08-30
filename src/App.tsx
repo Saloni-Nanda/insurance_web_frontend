@@ -7,9 +7,11 @@ import Header from "./pages/Header/Header"
 import Footer from "./pages/Footer/Footer"
 import "./App.css"
 import ScrollToTop from "./components/scroll_control/ScrollToTop"
+import {  HelmetProvider } from "react-helmet-async";
 
 const App = () => {
     return (
+      <HelmetProvider>
         <div className="relative bg-[url('/meeting.jpg')] bg-cover bg-center min-h-screen w-full">
   {/* Dark overlay */}
   <div className="absolute inset-0 bg-black/60"></div>
@@ -29,7 +31,7 @@ const App = () => {
     </BrowserRouter>
   </div>
 </div>
-
+</HelmetProvider>
     )
 }
 

@@ -41,7 +41,7 @@ const HeroSection2 = () => {
                         <h2
                             className={`
                 text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B2951] mb-4
-                transition-all duration-1000 ease-out leading-normal  max-w-5xl w-full mx-auto
+                transition-all duration-1000 ease-out leading-normal  max-w-7xl w-full mx-auto
                 ${isLeadershipVisible
                                     ? 'translate-x-0 opacity-100'
                                     : '-translate-x-full opacity-0'
@@ -49,7 +49,8 @@ const HeroSection2 = () => {
               `}
                             style={{ fontFamily: "'Roboto', serif" }}
                         >
-                            Leadership Hiring, Redefined : <br />CXO & Senior Recruitment at Just 1% of CTC
+                            REDEFINING LEADERSHIP HIRING WITH
+PRECISION AND TRUST: <br />CXO & Senior Recruitment at Just 1% of CTC
                         </h2>
                     </div>
 

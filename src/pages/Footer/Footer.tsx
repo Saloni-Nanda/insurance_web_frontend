@@ -1,14 +1,23 @@
-import { ArrowUp } from 'lucide-react';
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { ArrowUp, X } from 'lucide-react';
+import { useState, useEffect, ReactNode } from 'react';
+import TermsAndConditions from '../TC/Tc';
+import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
 
-const Footer = () => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
+interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  title: string;
+  children: ReactNode;
+}
 
+const Footer: React.FC = () => {
+  const [showScrollTop, setShowScrollTop] = useState<boolean>(false);
+  const [showPrivacyModal, setShowPrivacyModal] = useState<boolean>(false);
+  const [showTermsModal, setShowTermsModal] = useState<boolean>(false);
 
   // Show button when user scrolls down
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (): void => {
       setShowScrollTop(window.scrollY > 300);
     };
 
@@ -17,9 +26,71 @@ const Footer = () => {
   }, []);
 
   // Scroll to top smoothly
-  const scrollToTop = () => {
+  const scrollToTop = (): void => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  // Handle escape key to close modals
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent): void => {
+      if (e.key === 'Escape') {
+        setShowPrivacyModal(false);
+        setShowTermsModal(false);
+      }
+    };
+
+    if (showPrivacyModal || showTermsModal) {
+      document.addEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'unset';
+    };
+  }, [showPrivacyModal, showTermsModal]);
+
+  const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
+    if (!isOpen) return null;
+
+    return (
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+        {/* Backdrop */}
+        <div 
+          className="absolute inset-0 bg-gray-500 opacity-70 backdrop-blur-sm"
+          onClick={onClose}
+        />
+        
+        {/* Modal Content */}
+        <div className="relative bg-white rounded-lg shadow-xl max-w-xl w-full max-h-[100vh] overflow-hidden">
+          {/* Header */}
+          <div className="flex items-center justify-between p-6 border-b border-gray-200">
+            <h2 className="text-2xl font-bold text-[#B99D54]" style={{ fontFamily: "'Roboto', serif" }}>
+              {title}
+            </h2>
+            <button
+              onClick={onClose}
+              className="text-gray-500 hover:text-[#B99D54] transition-colors duration-200"
+              aria-label="Close modal"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+          
+          {/* Content */}
+          <div className="p-6 overflow-y-auto max-h-[calc(100vh-120px)] max-w-3xl">
+            {children}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+
+
+  
 
   return (
     <footer className="bg-white text-black pt-12 pb-7 px-4 sm:px-4 lg:px-32 border-t border-gray-200 relative">
@@ -52,34 +123,46 @@ const Footer = () => {
               Quick Links
             </h4>
             <nav className="flex flex-col gap-1 space-y-3 text-lg">
-              <Link to='/'>
+              <a href='/'>
               <button 
                 className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 Home
               </button>
-              </Link>
-              <Link to='/about'>
+              </a>
+              <a href='/about'>
               <button 
                 className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 About Us
               </button>
-              </Link>
-              <Link to='/service'>
+              </a>
+              <a href='/service'>
               <button   
                 className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 Services
               </button>
-              </Link>
-              <Link to='/contact'>
+              </a>
+              <a href='/contact'>
               <button   
                 className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 Contact Us
               </button>
-              </Link>
+              </a>
+              <button   
+                onClick={() => setShowPrivacyModal(true)}
+                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
+              >
+                Privacy Policy
+              </button>
+              <button   
+                onClick={() => setShowTermsModal(true)}
+                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
+              >
+                Terms & Conditions
+              </button>
             </nav>
           </div>
 
@@ -176,6 +259,24 @@ const Footer = () => {
           <ArrowUp className='w-5 h-5 m-3'/>
         </button>
       )}
+
+      {/* Privacy Policy Modal */}
+      <Modal 
+        isOpen={showPrivacyModal} 
+        onClose={() => setShowPrivacyModal(false)}
+        title="Privacy Policy"
+      >
+        <PrivacyPolicy />
+      </Modal>
+
+      {/* Terms & Conditions Modal */}
+      <Modal 
+        isOpen={showTermsModal} 
+        onClose={() => setShowTermsModal(false)}
+        title="Terms & Conditions"
+      >
+        <TermsAndConditions />
+      </Modal>
 
       {/* Google Fonts - Roboto */}
       <link 

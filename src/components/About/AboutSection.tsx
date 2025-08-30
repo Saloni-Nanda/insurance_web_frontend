@@ -136,7 +136,7 @@ const AboutSection: React.FC = () => {
                         <h3 className="text-3xl font-bold leading-tight tracking-tight text-black mb-4">
                             Why RBG HR?
                         </h3>
-                        <p className="text-lg text-black font-semibold max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-lg text-black font-semibold max-w-4xl mx-auto leading-relaxed">
                             We understand the unique challenges and requirements of the insurance industry. Our specialized approach ensures we deliver the right talent at every level, from entry-level positions to executive leadership roles.
                         </p>
                     </div>

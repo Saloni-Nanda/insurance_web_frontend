@@ -71,7 +71,9 @@ const AboutSection2: React.FC = () => {
             <div className={`text-center bg-gray-50 px-4 py-4 rounded-lg shadow-sm border-x-4 slide-in-mission ${isVisible ? 'visible' : ''}`}
               style={{ borderLeftColor: '#1B2951', borderRightColor: '#1B2951', transitionDelay: '0.2s' }}>
               <p className="text-xl text-black leading-relaxed font-semibold">
-                To connect insurers with the at the and at the - helping our clients build that drive growth.
+                To connect insurers with the right talent, at the right time, and at the
+right cost — helping our clients build high-performing teams that
+drive growth.
 
               </p>
             </div>
