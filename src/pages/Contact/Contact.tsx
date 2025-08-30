@@ -224,7 +224,7 @@ leadership hiring at 10% of standard cost.
 
 
       <div className="w-full flex justify-center px-6 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-4xl w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 max-w-5xl w-full">
 
           {/* Left Content - Form */}
           <div className="lg:col-span-2">

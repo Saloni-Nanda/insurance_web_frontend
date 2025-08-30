@@ -99,11 +99,11 @@ export default function ServiceSection() {
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-4'
                 }`}>
-                <h3 className="text-2xl font-bold text-[#1B2951] mb-4">
+                <h3 className="text-4xl font-bold text-[#1B2951] mb-4">
                   Leadership Hiring
                 </h3>
 
-                <p className="text-gray-700 leading-relaxed mb-6 font-medium">
+                <p className="text-black leading-relaxed mb-6 font-medium">
                   Leadership talent is critical - but it doesn't have to come at a heavy price. Our retainer-based model delivers CXO and senior leadership hiring at just 1% of CTC, giving insurers access to top executives with affordability and uncompromised quality.
                 </p>
               </div>
