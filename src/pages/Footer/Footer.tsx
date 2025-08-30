@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
     };
   }, [showPrivacyModal, showTermsModal]);
 
-  const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
+  const Modal: React.FC<ModalProps> = ({ isOpen, onClose,  children }) => {
     if (!isOpen) return null;
 
     return (
