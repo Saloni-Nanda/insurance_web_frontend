@@ -2,6 +2,7 @@ import { ArrowUp, X } from 'lucide-react';
 import { useState, useEffect, ReactNode } from 'react';
 import TermsAndConditions from '../TC/Tc';
 import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
+import { Link } from 'react-router-dom';
 
 interface ModalProps {
   isOpen: boolean;
@@ -123,34 +124,34 @@ const Footer: React.FC = () => {
               Quick Links
             </h4>
             <nav className="flex flex-col gap-1 space-y-3 text-lg">
-              <a href='/'>
+              <Link to='/'>
               <button 
                 className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 Home
               </button>
-              </a>
-              <a href='/about'>
+              </Link>
+              <Link to='/about'>
               <button 
                 className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 About Us
               </button>
-              </a>
-              <a href='/service'>
+              </Link>
+              <Link to='/service'>
               <button   
                 className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 Services
               </button>
-              </a>
-              <a href='/contact'>
+              </Link>
+              <Link to='/contact'>
               <button   
                 className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 Contact Us
               </button>
-              </a>
+              </Link>
               <button   
                 onClick={() => setShowPrivacyModal(true)}
                 className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
