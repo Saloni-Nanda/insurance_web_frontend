@@ -67,10 +67,11 @@ const Footer: React.FC = () => {
         {/* Modal Content */}
         <div className="relative bg-white rounded-lg shadow-xl max-w-xl w-full max-h-[100vh] overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h2 className="text-2xl font-bold text-[#B99D54]" style={{ fontFamily: "'Roboto', serif" }}>
-              {title}
-            </h2>
+          
+          
+          {/* Content */}
+          <div className="flex items-center justify-end pt-2 pr-5  border-gray-200">
+
             <button
               onClick={onClose}
               className="text-gray-500 hover:text-[#B99D54] transition-colors duration-200"
@@ -79,9 +80,7 @@ const Footer: React.FC = () => {
               <X className="w-6 h-6" />
             </button>
           </div>
-          
-          {/* Content */}
-          <div className="p-6 overflow-y-auto max-h-[calc(100vh-120px)] max-w-3xl">
+          <div className="p-2 overflow-y-auto max-h-[calc(100vh-120px)] max-w-3xl">
             {children}
           </div>
         </div>
