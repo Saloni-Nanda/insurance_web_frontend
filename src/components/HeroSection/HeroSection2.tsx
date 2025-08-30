@@ -33,15 +33,15 @@ const HeroSection2 = () => {
 
             <section
                 id="leadership-section"
-                className="py-20 bg-gray-100"
+                className="py-10 bg-gray-100"
             >
                 <div className="px-4 sm:px-4 lg:px-16 mx-auto w-full max-w-7xl">
                     {/* Section Title */}
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-6">
                         <h2
                             className={`
-                text-3xl sm:text-4xl lg:text-5xl font-light text-[#1B2951] mb-4
-                transition-all duration-1000 ease-out
+                text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B2951] mb-4
+                transition-all duration-1000 ease-out leading-normal  max-w-5xl w-full mx-auto
                 ${isLeadershipVisible
                                     ? 'translate-x-0 opacity-100'
                                     : '-translate-x-full opacity-0'
@@ -49,12 +49,12 @@ const HeroSection2 = () => {
               `}
                             style={{ fontFamily: "'Roboto', serif" }}
                         >
-                            Leadership Hiring, Redefined
+                            Leadership Hiring, Redefined : <br />CXO & Senior Recruitment at Just 1% of CTC
                         </h2>
                     </div>
 
                     {/* Content Layout */}
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                    <div className=" items-center">
                         {/* Left: Text Content */}
                         <div
                             className={`
@@ -66,14 +66,14 @@ const HeroSection2 = () => {
               `}
                         >
                             <h3
-                                className="text-2xl sm:text-3xl font-medium text-[#1B2951] mb-6  leading-tight tracking-tight"
+                                className="text-2xl sm:text-3xl font-medium text-[#1B2951] mb-6  leading-tight tracking-tight "
                                 style={{ fontFamily: "'Roboto', serif" }}
                             >
-                                CXO & Senior Recruitment at Just 1% of CTC
+                                
                             </h3>
 
                             <p
-                                className="text-lg text-black leading-relaxed text-justify font-light"
+                                className="text-lg text-black leading-relaxed  font-semibold text-center"
                                 style={{ fontFamily: "'Roboto', serif" }}
                             >
                                 Our Retainer Model ensures affordability without compromising quality.
@@ -83,30 +83,6 @@ const HeroSection2 = () => {
                             </p>
                         </div>
 
-                        {/* Right: Illustration */}
-                        <div
-                            className={`
-    flex justify-center lg:justify-end
-    transition-all duration-1000 ease-out delay-600 mr-0 lg:mr-24
-    ${isLeadershipVisible
-                                    ? 'translate-x-0 opacity-100'
-                                    : '-translate-x-full opacity-0'
-                                }
-  `}
-                        >
-                            <div className="relative ">
-                                {/* Main Image Container */}
-                                <div className="w-full h-64 shadow-lg flex items-center justify-center relative">
-                                    <img
-                                        src="/team.jpg" // replace with actual URL
-                                        alt="Leadership illustration"
-                                        className="w-full h-full object-cover rounded-lg"
-                                    />
-
-                                   
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

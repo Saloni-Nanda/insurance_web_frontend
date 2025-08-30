@@ -215,7 +215,7 @@ const Contact: React.FC = () => {
           <h1 className="text-5xl font-bold text-[#1B2951] mb-4 relative inline-block">
             Get In Touch
           </h1>
-          <p className="text-xl text-gray-600 mt-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-black font-semibold mt-8 max-w-2xl mx-auto leading-relaxed">
             Ready to transform your insurance career? Connect with our specialists today and discover
             opportunities that match your expertise and ambitions.
           </p>
@@ -342,7 +342,7 @@ const Contact: React.FC = () => {
           {/* Contact Information */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-xl p-5 shadow-md border border-[#B99D54]/20 h-full">
-              <h2 className="text-base font-semibold text-[#1B2951] mb-4 text-center">
+              <h2 className="text-xl font-semibold text-[#1B2951] mb-4 text-center">
                 Contact Information
               </h2>
 
@@ -352,8 +352,8 @@ const Contact: React.FC = () => {
                     <Phone className="w-3.5 h-3.5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xs font-semibold text-[#1B2951] mb-0.5">Phone</h3>
-                    <a href="tel:+91-9088020777" className="text-gray-600 text-xs hover:text-[#B99D54] transition-colors duration-300 hover:underline">
+                    <h3 className="text-lg font-semibold text-[#1B2951] mb-0.5">Phone</h3>
+                    <a href="tel:+91-9088020777" className="text-black text-sm hover:text-[#B99D54] transition-colors duration-300 hover:underline">
                       +91-9088020777
                     </a>
                   </div>
@@ -364,8 +364,8 @@ const Contact: React.FC = () => {
                     <Mail className="w-3.5 h-3.5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xs font-semibold text-[#1B2951] mb-0.5">Email</h3>
-                    <a href="mailto:contact@rbghr.com" className="text-gray-600 text-xs hover:text-[#B99D54] transition-colors duration-300 hover:underline">
+                    <h3 className="text-lg font-semibold text-[#1B2951] mb-0.5">Email</h3>
+                    <a href="mailto:contact@rbghr.com" className="text-black text-sm hover:text-[#B99D54] transition-colors duration-300 hover:underline">
                       contact@rbghr.com
                     </a>
                   </div>
@@ -376,8 +376,8 @@ const Contact: React.FC = () => {
                     <MapPin className="w-3.5 h-3.5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xs font-semibold text-[#1B2951] mb-0.5">Office Location</h3>
-                    <p className="text-gray-600 text-xs">Kolkata, India</p>
+                    <h3 className="text-lg font-semibold text-[#1B2951] mb-0.5">Office Location</h3>
+                    <p className="text-black text-sm">Kolkata, India</p>
                   </div>
                 </div>
               </div>

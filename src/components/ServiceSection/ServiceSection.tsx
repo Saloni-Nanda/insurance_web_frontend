@@ -59,7 +59,7 @@ export default function ServiceSection() {
               : 'opacity-0 -translate-x-20'
           }`}
         >
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed font-semi-bold">
+          <p className="text-3xl text-black max-w-2xl mx-auto leading-relaxed font-semibold">
             Exclusively dedicated to the insurance industry since 2014, delivering exceptional talent solutions with precision and expertise.
           </p>
         </div>
@@ -96,11 +96,11 @@ export default function ServiceSection() {
                   ? 'opacity-100 translate-x-0' 
                   : 'opacity-0 -translate-x-12'
               }`}>
-                <h3 className="text-2xl font-semibold text-[#1B2951] mb-4 group-hover:text-[#1B2951] transition-colors">
+                <h3 className="text-2xl font-bold text-[#1B2951] mb-4 group-hover:text-[#1B2951] transition-colors">
                   Insurance Recruitment
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed mb-6 font-light">
+                <p className="text-black leading-relaxed mb-6 font-semibold">
                   Since 2014, we've helped insurers build high-performing teams across India. Our recruitment covers frontline,
                   mid-level, senior, and specialist roles - from sales and branch operations to underwriting, claims, product, and
                   compliance - ensuring quick closures, strong retention, and pan-India reach.
@@ -152,11 +152,11 @@ export default function ServiceSection() {
                   ? 'opacity-100 translate-x-0' 
                   : 'opacity-0 -translate-x-12'
               }`}>
-                <h3 className="text-2xl font-semibold text-[#1B2951] mb-4 group-hover:text-[#1B2951] transition-colors">
+                <h3 className="text-2xl font-bold text-[#1B2951] mb-4 group-hover:text-[#1B2951] transition-colors">
                   Leadership Hiring
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed mb-6 font-light">
+                <p className="text-black leading-relaxed mb-6 font-semibold">
                   Leadership talent is critical - but it doesn't have to come at a heavy price. Our retainer-based model delivers
                   CXO and senior leadership hiring at just 1% of CTC, giving insurers access to top executives with
                   affordability and uncompromised quality.
@@ -189,7 +189,7 @@ export default function ServiceSection() {
               : 'opacity-0 -translate-x-24'
           }`}
         >
-          <p className={`text-gray-600 mb-6 font-light transition-all duration-700 delay-200 ${
+          <p className={`text-gray-600 mb-6 font-semibold transition-all duration-700 delay-200 ${
             isBottomCtaVisible 
               ? 'opacity-100 translate-x-0' 
               : 'opacity-0 -translate-x-16'
@@ -203,7 +203,7 @@ export default function ServiceSection() {
           }`}>
             <Link to='/'>
               <button className="px-8 py-3.5 bg-[#1B2951] text-white border border-[#1B2951]
-                  text-sm font-medium tracking-widest leading-tight uppercase
+                  text-sm font-semibold tracking-widest leading-tight uppercase
                   transition-all duration-300 ease-in-out
                   hover:bg-white hover:border-[#1B2951] hover:text-[#1B2951] hover:scale-105
                   min-w-[140px] flex gap-2">

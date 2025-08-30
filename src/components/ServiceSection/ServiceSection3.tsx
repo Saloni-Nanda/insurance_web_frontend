@@ -82,7 +82,7 @@ const ServiceSection3: React.FC = () => {
               : 'opacity-0 -translate-x-20'
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-light text-[#1B2951] tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1B2951] tracking-tight">
             What We Offer
           </h2>
         </div>

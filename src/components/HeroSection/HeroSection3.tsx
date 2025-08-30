@@ -27,7 +27,7 @@ const HeroSection3= () => {
         <h1 
           className={`
             text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 
-            font-light text-white mb-8 
+            font-semi-bold text-white mb-8 
             leading-tight tracking-tight text-center
             transition-all duration-1000 ease-out
             ${isVisible 
@@ -55,8 +55,8 @@ const HeroSection3= () => {
           <button 
             className="
               px-8 py-3.5 bg-white text-[#1B2951] border border-[#1B2951]
-              text-sm font-medium tracking-widest uppercase
-              transition-all duration-300 ease-in-out
+              text-sm tracking-widest uppercase
+              transition-all duration-300 ease-in-out font-semibold
               hover:bg-[#1B2951] hover:border-[#1B2951] hover:text-white hover:scale-105
               min-w-[140px]
               focus:outline-none focus:ring-2 focus:ring-[#B99D54] focus:ring-opacity-50

@@ -36,7 +36,7 @@ const Footer = () => {
               RBG HR Services LLP
             </h3>
             <p 
-              className="text-black mb-6 leading-relaxed"
+              className="text-black mb-6 leading-relaxed font-semibold"
               style={{ fontFamily: "'Roboto', serif" }}
             >
               Insurance Industry Hiring Specialists Since 2014. Building high-performing teams across India with deep domain expertise.
@@ -54,28 +54,28 @@ const Footer = () => {
             <nav className="flex flex-col gap-1 space-y-3 text-lg">
               <Link to='/'>
               <button 
-                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 "
+                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 Home
               </button>
               </Link>
               <Link to='/about'>
               <button 
-                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 "
+                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 About Us
               </button>
               </Link>
               <Link to='/service'>
               <button   
-                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 "
+                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 Services
               </button>
               </Link>
               <Link to='/contact'>
               <button   
-                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 "
+                className="block text-left w-full text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
               >
                 Contact Us
               </button>
@@ -98,7 +98,7 @@ const Footer = () => {
                 </svg>
                 <a 
                   href="tel:+91-9088020777" 
-                  className="text-black hover:text-[#B99D54] transition-colors duration-300 "
+                  className="text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
                 >
                   +91-9088020777
                 </a>
@@ -111,7 +111,7 @@ const Footer = () => {
                 </svg>
                 <a 
                   href="mailto:contact@rbghr.com" 
-                  className="text-black hover:text-[#B99D54] transition-colors duration-300 "
+                  className="text-black hover:text-[#B99D54] transition-colors duration-300 font-semibold"
                 >
                   contact@rbghr.com
                 </a>
@@ -121,7 +121,7 @@ const Footer = () => {
                 <svg className="w-5 h-5 text-[#B99D54] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
                 </svg>
-                <span className="text-black ">
+                <span className="text-black font-semibold">
                   Kolkata, India
                 </span>
               </div>
@@ -135,7 +135,7 @@ const Footer = () => {
             
             {/* Social Media Links */}
             <div className="flex items-center space-x-6">
-              <span className="text-black  text-sm">
+              <span className="text-black  text-sm font-semibold">
                 Follow us:
               </span>
               
@@ -159,7 +159,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="text-black text-sm ">
+            <div className="text-black text-sm font-semibold">
               © {new Date().getFullYear()} RBG HR Services LLP. All rights reserved.
             </div>
           </div>

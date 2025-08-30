@@ -43,7 +43,7 @@ const AboutSection: React.FC = () => {
             title: 'Insurance Focused',
             description: '100% specialization in life, general, and health insurance, along with brokers and intermediaries.',
             highlights: ['100% specialization'],
-            bgColor: '#1B2951'
+            bgColor: '#B99D54'
         },
         {
             icon: Award,
@@ -57,7 +57,7 @@ const AboutSection: React.FC = () => {
             title: 'Speed & Accuracy',
             description: 'Structured processes and an active talent network for faster closures.',
             highlights: ['active talent network'],
-            bgColor: '#1B2951'
+            bgColor: '#B99D54'
         },
         {
             icon: MapPin,
@@ -71,7 +71,7 @@ const AboutSection: React.FC = () => {
             title: 'Affordable Leadership Hiring',
             description: 'Retainer model at 1% of CTC.',
             highlights: ['1%', 'of CTC'],
-            bgColor: '#1B2951'
+            bgColor: '#B99D54'
         }
     ];
 
@@ -111,13 +111,13 @@ const AboutSection: React.FC = () => {
             <div className="w-full mx-auto">
 
                 <div className="relative w-full flex items-center justify-center">
-                    <div className={`bg-gray-50 p-8 rounded-lg shadow-sm border-l-4 max-w-4xl text-center slide-in-intro ${isVisible ? 'visible' : ''}`}
-                        style={{ borderLeftColor: '#1B2951' }}>
-                        <p className="text-lg text-black leading-relaxed font-medium">
+                    <div className={`bg-gray-50 p-8 rounded-lg shadow-sm border-x-4  max-w-4xl text-center slide-in-intro ${isVisible ? 'visible' : ''}`}
+                        style={{ borderLeftColor: '#1B2951', borderRightColor: '#1B2951'}}>
+                        <p className="text-lg text-black leading-relaxed ">
                             <span className="font-bold" style={{ color: '#1B2951' }}>Founded in 2014</span>,
-                            <span className="mx-2" style={{ color: '#B99D54' }}>RBG HR Services LLP</span>
-                            serves exclusively the
-                            <span className="font-semibold ml-1" style={{ color: '#1B2951' }}>insurance industry</span>.
+                            <span className="mx-2 font-bold" style={{ color: '#B99D54' }}>RBG HR Services LLP</span>
+                            
+                            <span className="font-semibold ml-1" style={{ color: '#1B2951' }}>serves exclusively the insurance industry</span>.
                         </p>
                     </div>
                 </div>
@@ -125,10 +125,10 @@ const AboutSection: React.FC = () => {
                 {/* Why RBG HR Section */}
                 <div className="mt-20" ref={sectionRef}>
                     <div className={`text-center mb-12 slide-in-intro ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
-                        <h3 className="text-3xl font-semibold leading-tight tracking-tight text-black mb-4">
+                        <h3 className="text-3xl font-bold leading-tight tracking-tight text-black mb-4">
                             Why RBG HR?
                         </h3>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-lg text-black font-semibold max-w-3xl mx-auto leading-relaxed">
                             We understand the unique challenges and requirements of the insurance industry. Our specialized approach ensures we deliver the right talent at every level, from entry-level positions to executive leadership roles.
                         </p>
                     </div>
@@ -148,32 +148,36 @@ const AboutSection: React.FC = () => {
                                             <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6 mx-auto" style={{ backgroundColor: card.bgColor }}>
                                                 <Icon className="w-8 h-8 text-white" />
                                             </div>
-                                            <h4 className="text-xl font-bold text-black mb-4 text-center">{card.title}</h4>
+                                            <h4 className="text-2xl font-bold text-black mb-4 text-center">{card.title}</h4>
                                             <div className="flex-grow">
                                                 <p className="text-gray-700 text-center leading-relaxed">
                                                     {card.title === 'Insurance Focused' && (
                                                         <>
-                                                            <span className="font-semibold" style={{ color: '#1B2951' }}>100% specialization</span> in life, general, and health insurance, along with brokers and intermediaries.
+                                                            <span className="font-semibold" style={{ color: '#1B2951' }}>100% specialization in life, general, and health insurance, along with brokers and intermediaries.</span> 
                                                         </>
                                                     )}
                                                     {card.title === 'Proven Experience' && (
                                                         <>
-                                                            <span className="font-semibold" style={{ color: '#1B2951' }}>Over a decade</span> of expertise with frontline to <span className="font-semibold" style={{ color: '#B99D54' }}>CXO-level hiring</span>.
+                                                         <span className="font-semibold" style={{ color: '#1B2951' }}>Over a decade  of expertise with frontline to CXO-level hiring.</span> 
+                                                           
                                                         </>
                                                     )}
                                                     {card.title === 'Speed & Accuracy' && (
                                                         <>
-                                                            Structured processes and an <span className="font-semibold" style={{ color: '#1B2951' }}>active talent network</span> for faster closures.
+                                                        <span className="font-semibold" style={{ color: '#1B2951' }}>Structured processes and an active talent network for faster closures.</span> 
+                                                           
                                                         </>
                                                     )}
                                                     {card.title === 'Pan-India Reach' && (
                                                         <>
-                                                            Hiring capability across <span className="font-semibold" style={{ color: '#1B2951' }}>metros</span> and <span className="font-semibold" style={{ color: '#B99D54' }}>tier-2/3 cities</span>.
+                                                         <span className="font-semibold" style={{ color: '#1B2951' }}> Hiring capability across metros and tier-2/3 cities</span> 
+                                                            
                                                         </>
                                                     )}
                                                     {card.title === 'Affordable Leadership Hiring' && (
                                                         <>
-                                                            Retainer model at <span className="font-semibold text-2xl" style={{ color: '#B99D54' }}>1%</span> <span className="font-semibold" style={{ color: '#1B2951' }}>of CTC</span>.
+                                                        <span className="font-semibold" style={{ color: '#1B2951' }}>Retainer model at 1% of CTC</span> 
+                                                           
                                                         </>
                                                     )}
                                                 </p>

@@ -62,14 +62,14 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl w-full">
+      <div className="relative z-10 max-w-6xl w-full ">
         {/* Headline */}
         <h1 
           className={`
             text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 
-            font-light text-[#1B2951] mb-8 
+            font-semibold text-[#1B2951] mb-8 
             leading-tight tracking-tight
-            transition-all duration-1000 ease-out text-center
+            transition-all duration-1000 ease-out text-center max-w-2xl mx-auto
             ${isVisible 
               ? 'translate-x-0 opacity-100' 
               : '-translate-x-full opacity-0'
@@ -83,8 +83,8 @@ const HeroSection: React.FC = () => {
         {/* Subheading */}
         <p 
           className={`
-            text-lg sm:text-xl text-gray-700 mb-12 
-            font-light leading-relaxed max-w-2xl mx-auto
+            text-lg sm:text-xl text-black mb-12 
+            font-semibold leading-relaxed max-w-8xl mx-auto
             transition-all duration-1000 ease-out delay-300 text-center
             drop-shadow-sm
             ${isVisible 
@@ -110,11 +110,11 @@ const HeroSection: React.FC = () => {
             }
           `}
         >
-          <Link to='/service'>
+          <Link to='/contact'>
             <button 
               className="
                 px-8 py-3.5 bg-[#1B2951] text-white border border-[#1B2951]
-                text-sm font-medium tracking-widest uppercase
+                text-sm font-semibold tracking-widest uppercase
                 transition-all duration-300 ease-in-out
                 hover:bg-white hover:border-[#1B2951] hover:text-[#1B2951] hover:scale-105
                 min-w-[140px] drop-shadow-lg
@@ -124,11 +124,11 @@ const HeroSection: React.FC = () => {
               Hire With Us
             </button>
           </Link>
-          <Link to='/contact'>
+          <Link to='/service'>
             <button 
               className="
                 px-8 py-3.5 bg-white/90 text-[#1B2951] border border-[#B99D54]
-                text-sm font-medium tracking-widest uppercase
+                text-sm font-semibold tracking-widest uppercase
                 transition-all duration-300 ease-in-out
                 hover:bg-[#B99D54] hover:text-white hover:scale-105
                 min-w-[140px] drop-shadow-lg backdrop-blur-sm
