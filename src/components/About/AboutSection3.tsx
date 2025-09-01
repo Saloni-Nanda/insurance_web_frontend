@@ -33,7 +33,7 @@ const AboutSection3: React.FC = () => {
     }, []);
 
     return (
-        <div className=" bg-white text-black">
+        <div className=" bg-white text-black" style={{ fontFamily: 'Roboto, sans-serif' }}>
             <div className="max-w-6xl mx-auto px-6 pt-10 pb-20">
                 {/* Header */}
                 <div 

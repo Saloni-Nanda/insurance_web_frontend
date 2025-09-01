@@ -29,7 +29,7 @@ const HeroSection2 = () => {
     }, [isLeadershipVisible]);
 
     return (
-        <div>
+        <div style={{ fontFamily: 'Roboto, sans-serif' }}>
 
             <section
                 id="leadership-section"
@@ -49,8 +49,8 @@ const HeroSection2 = () => {
               `}
                             style={{ fontFamily: "'Roboto', serif" }}
                         >
-                            REDEFINING LEADERSHIP HIRING WITH
-PRECISION AND TRUST: <br />CXO & Senior Recruitment at Just 1% of CTC
+                            "REDEFINING LEADERSHIP HIRING WITH
+PRECISION AND TRUST": <br />CXO & Senior Recruitment at <span className="text-[#B99D54]">Just 1% of CTC</span>
                         </h2>
                     </div>
 
@@ -77,7 +77,7 @@ PRECISION AND TRUST: <br />CXO & Senior Recruitment at Just 1% of CTC
                                 className="text-lg text-black leading-relaxed  font-semibold text-center"
                                 style={{ fontFamily: "'Roboto', serif" }}
                             >
-                                Our Retainer Model ensures affordability without compromising quality.
+                                Our <span className="text-[#B99D54]">Retainer Model</span> ensures affordability without compromising quality.
                                 We understand that finding the right leadership talent is crucial for your organization's success,
                                 which is why we've developed a cost-effective approach that delivers exceptional results
                                 while maintaining the highest standards of recruitment excellence.

@@ -24,7 +24,7 @@ const AboutSection2: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-white  px-4 sm:px-6 lg:px-8" ref={sectionRef}>
+    <section className="bg-white  px-4 sm:px-6 lg:px-8" ref={sectionRef} style={{ fontFamily: 'Roboto, sans-serif' }}>
       <style>{`
         .slide-in-card {
           opacity: 0;
@@ -140,23 +140,7 @@ drive growth.
           </div>
         </div>
 
-        <div className={`mt-16 text-center slide-in-intro ${isVisible ? 'visible' : ''}`}
-          style={{ transitionDelay: '0.9s' }}>
-          <div className="inline-flex items-center space-x-2">
-            <div
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: '#B99D54' }}
-            ></div>
-            <div
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: '#1B2951' }}
-            ></div>
-            <div
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: '#B99D54' }}
-            ></div>
-          </div>
-        </div>
+       
       </div>
     </section>
   );

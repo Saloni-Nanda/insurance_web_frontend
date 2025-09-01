@@ -67,7 +67,7 @@ const AboutSection: React.FC = () => {
     const duplicatedCards = [...cards, ...cards];
 
     return (
-        <section className="mt-28 md:mt-24 bg-white py-16 px-4 sm:px-6 lg:px-16">
+        <section className="mt-28 md:mt-24 bg-white py-16 px-4 sm:px-6 lg:px-16" style={{ fontFamily: 'Roboto, sans-serif' }}>
             <style>{`
         .scrollbar-hide {
           -ms-overflow-style: none;  /* IE and Edge */
@@ -80,7 +80,7 @@ const AboutSection: React.FC = () => {
         .slide-in-card {
           opacity: 0;
           transform: translateX(-100px);
-          transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         .slide-in-card.visible {
@@ -100,7 +100,7 @@ const AboutSection: React.FC = () => {
         }
 
         .continuous-scroll {
-          animation: scroll 20s linear infinite;
+          animation: scroll 50s linear infinite;
         }
 
         .continuous-scroll.paused {
@@ -201,22 +201,7 @@ const AboutSection: React.FC = () => {
                     </div>
                 </div>
 
-                <div className={`mt-16 text-center slide-in-intro ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.9s' }}>
-                    <div className="inline-flex items-center space-x-2">
-                        <div
-                            className="w-2 h-2 rounded-full"
-                            style={{ backgroundColor: '#B99D54' }}
-                        ></div>
-                        <div
-                            className="w-3 h-3 rounded-full"
-                            style={{ backgroundColor: '#1B2951' }}
-                        ></div>
-                        <div
-                            className="w-2 h-2 rounded-full"
-                            style={{ backgroundColor: '#B99D54' }}
-                        ></div>
-                    </div>
-                </div>
+                
             </div>
         </section>
     );

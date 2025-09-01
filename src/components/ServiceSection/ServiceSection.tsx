@@ -3,7 +3,6 @@ import { Briefcase, ArrowRight, CheckCircle } from "lucide-react";
 import { Link } from 'react-router-dom';
 
 export default function ServiceSection() {
-  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [isLeadershipCardVisible, setIsLeadershipCardVisible] = useState(false);
   const [isOfferSectionVisible, setIsOfferSectionVisible] = useState(false);
   const [areFeatureCardsVisible, setAreFeatureCardsVisible] = useState(false);
@@ -19,9 +18,7 @@ export default function ServiceSection() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.target === headerRef.current && entry.isIntersecting) {
-            setIsHeaderVisible(true);
-          }
+          
           if (entry.target === leadershipCardRef.current && entry.isIntersecting) {
             setIsLeadershipCardVisible(true);
           }
@@ -52,24 +49,11 @@ export default function ServiceSection() {
   }, []);
 
   return (
-    <section className="bg-white py-20 mt-24" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+    <section className="bg-white py-12 mt-24" style={{ fontFamily: 'Roboto, sans-serif' }}>
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Header Section */}
-        <div
-          ref={headerRef}
-          className={`text-center mb-16 transition-all duration-1000 ease-out ${isHeaderVisible
-              ? 'opacity-100 translate-y-0'
-              : 'opacity-0 translate-y-8'
-            }`}
-        >
-          <p className="text-3xl text-black max-w-5xl mx-auto leading-relaxed font-semibold">
-            Exclusively dedicated to the insurance industry since 2014, delivering exceptional talent solutions with precision and expertise.
-          </p>
-        </div>
-
         {/* Leadership Hiring Card - Centered */}
-        <div className="flex justify-center mb-20">
+        <div className="flex justify-center mb-10">
           <div
             ref={leadershipCardRef}
             className={`group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden max-w-4xl w-full ${isLeadershipCardVisible
@@ -103,7 +87,7 @@ export default function ServiceSection() {
                   Leadership Hiring
                 </h3>
 
-                <p className="text-black leading-relaxed mb-6 font-medium">
+                <p className="text-black leading-relaxed mb-2 font-medium">
                   Leadership talent is critical - but it doesn't have to come at a heavy price. Our retainer-based model delivers CXO and senior leadership hiring at just 1% of CTC, giving insurers access to top executives with affordability and uncompromised quality.
                 </p>
               </div>

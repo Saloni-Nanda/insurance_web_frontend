@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
   }, [backgroundImages.length]);
 
   return (
-    <section className="mt-28 md:mt-24 relative  flex flex-col justify-center items-center px-4 sm:px-8 py-12 overflow-hidden">
+    <section className="mt-28 md:mt-24 relative  flex flex-col justify-center items-center px-4 sm:px-8 py-12 overflow-hidden" style={{ fontFamily: 'Roboto, sans-serif' }}>
       {/* Background Image Carousel */}
       <div className="absolute inset-0 w-full h-full">
         {backgroundImages.map((image, index) => (
@@ -66,10 +66,10 @@ const HeroSection: React.FC = () => {
         {/* Headline */}
         <h1 
           className={`
-            text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 
+            text-3xl sm:text-4xl lg:text-5xl 
             font-semibold text-[#1B2951] mb-8 
             leading-tight tracking-tight
-            transition-all duration-1000 ease-out text-center max-w-2xl mx-auto
+            transition-all duration-1000 ease-out text-center  mx-auto
             ${isVisible 
               ? 'translate-x-0 opacity-100' 
               : '-translate-x-full opacity-0'
@@ -111,7 +111,7 @@ const HeroSection: React.FC = () => {
           `}
         >
          
-          <Link to='/service'>
+          <Link to='/about'>
             <button 
               className="
                 px-8 py-3.5 bg-white/90 text-[#1B2951] border border-[#B99D54]
@@ -127,23 +127,7 @@ const HeroSection: React.FC = () => {
           </Link>
         </div>
 
-        {/* Image Navigation Dots */}
-        <div className="flex justify-center mt-12 space-x-2">
-          {backgroundImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentImageIndex(index)}
-              className={`
-                w-3 h-3 rounded-full transition-all duration-300
-                ${index === currentImageIndex 
-                  ? 'bg-[#1B2951] scale-125' 
-                  : 'bg-white/60 hover:bg-white/80'
-                }
-              `}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
+       
       </div>
 
       {/* CSS Animation for Zoom Effect */}

@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
     if (!isOpen) return null;
 
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ fontFamily: 'Roboto, sans-serif' }}>
         {/* Backdrop */}
         <div 
           className="absolute inset-0 bg-gray-500 opacity-70 backdrop-blur-sm"

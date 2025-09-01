@@ -145,7 +145,7 @@ leadership hiring at 10% of standard cost.
           "
             />;
           </Helmet>
-    <div className="mt-28 md:mt-24  bg-white text-black">
+    <div className="mt-28 md:mt-24  bg-white text-black" style={{ fontFamily: 'Roboto, sans-serif' }}>
 
       {/* Popup Overlay */}
       {popup.show && (

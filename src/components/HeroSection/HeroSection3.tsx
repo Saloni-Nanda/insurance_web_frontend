@@ -19,7 +19,7 @@ const HeroSection3= () => {
 
   return (
     <>
-    <section className="flex flex-col justify-center items-center px-4 sm:px-8 py-16 bg-transparent">
+    <section className="flex flex-col justify-center items-center px-4 sm:px-8 py-16 bg-transparent" style={{ fontFamily: 'Roboto, sans-serif' }}>
       <div className="max-w-4xl w-full">
         
 
