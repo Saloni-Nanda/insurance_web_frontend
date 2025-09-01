@@ -83,11 +83,11 @@ export default function ServiceSection() {
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-4'
                 }`}>
-                <h3 className="text-4xl font-bold text-[#1B2951] mb-4">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B2951] mb-4">
                   Leadership Hiring
                 </h3>
 
-                <p className="text-black leading-relaxed mb-2 font-medium">
+                <p className="text-black leading-relaxed mb-2 font-semibold text-lg sm:text-xl">
                   Leadership talent is critical - but it doesn't have to come at a heavy price. Our retainer-based model delivers CXO and senior leadership hiring at <span className='text-[#B99D54]'>just 1% of CTC</span>, giving insurers access to top executives with affordability and uncompromised quality.
                 </p>
               </div>
@@ -104,7 +104,7 @@ export default function ServiceSection() {
               : 'opacity-0 translate-y-8'
             }`}
         >
-          <h2 className="text-4xl font-bold text-[#1B2951] mb-16">What We Offer</h2>
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B2951] mb-16">What We Offer</h3>
         </div>
 
         {/* Feature Cards Grid */}
@@ -121,9 +121,9 @@ export default function ServiceSection() {
               <div className="w-6 h-6 rounded-full border-2 border-[#B99D54] flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                 <CheckCircle className="w-4 h-4 text-[#B99D54]" />
               </div>
-              <h3 className="text-xl font-bold text-[#B99D54]">CXO & VP Hiring Across Functions</h3>
+              <h3 className="text-2xl font-bold text-[#B99D54]">CXO & VP Hiring Across Functions</h3>
             </div>
-            <p className="text-gray-200 leading-relaxed ml-9">
+            <p className="text-gray-200 leading-relaxed ml-9 text-lg sm:text-xl">
               We specialize in senior-level recruitment, ensuring top leadership talent is placed across diverse functions with precision and speed.
             </p>
           </div>
@@ -134,9 +134,9 @@ export default function ServiceSection() {
               <div className="w-6 h-6 rounded-full border-2 border-[#B99D54] flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                 <CheckCircle className="w-4 h-4 text-[#B99D54]" />
               </div>
-              <h3 className="text-xl font-bold text-[#B99D54]">Dedicated Consultant Support</h3>
+              <h3 className="text-2xl font-bold text-[#B99D54]">Dedicated Consultant Support</h3>
             </div>
-            <p className="text-gray-200 leading-relaxed ml-9">
+            <p className="text-gray-200 leading-relaxed ml-9 text-lg sm:text-xl">
               Our consultants act as an extension of your HR team, providing personalized support and industry insights throughout the hiring journey.
             </p>
           </div>
@@ -147,9 +147,9 @@ export default function ServiceSection() {
               <div className="w-6 h-6 rounded-full border-2 border-[#B99D54] flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                 <CheckCircle className="w-4 h-4 text-[#B99D54]" />
               </div>
-              <h3 className="text-xl font-bold text-[#B99D54]">Discreet & Confidential Search</h3>
+              <h3 className="text-2xl font-bold text-[#B99D54]">Discreet & Confidential Search</h3>
             </div>
-            <p className="text-gray-200 leading-relaxed ml-9">
+            <p className="text-gray-200 leading-relaxed ml-9 text-lg sm:text-xl">
               We handle leadership hiring with utmost confidentiality, safeguarding sensitive information while ensuring market integrity.
             </p>
           </div>
@@ -160,9 +160,9 @@ export default function ServiceSection() {
               <div className="w-6 h-6 rounded-full border-2 border-[#B99D54] flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                 <CheckCircle className="w-4 h-4 text-[#B99D54]" />
               </div>
-              <h3 className="text-xl font-bold text-[#B99D54]">Competency-Based Assessments</h3>
+              <h3 className="text-2xl font-bold text-[#B99D54]">Competency-Based Assessments</h3>
             </div>
-            <p className="text-gray-200 leading-relaxed ml-9">
+            <p className="text-gray-200 leading-relaxed ml-9 text-lg sm:text-xl">
               We evaluate candidates beyond resumes, using proven frameworks to assess leadership qualities, cultural fit, and long-term potential.
             </p>
           </div>
