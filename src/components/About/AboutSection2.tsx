@@ -61,7 +61,7 @@ const AboutSection2: React.FC = () => {
       `}</style>
       <div className="max-w-4xl mx-auto">
         <div className={`text-center mb-12 slide-in-intro ${isVisible ? 'visible' : ''}`}>
-          <h2 className="text-4xl font-bold leading-tight tracking-tight text-black mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-tight text-[#1B2951] mb-4">
             Our Mission
           </h2>
         </div>
@@ -70,7 +70,7 @@ const AboutSection2: React.FC = () => {
           <div className="pl-8 relative">
             <div className={`text-center bg-gray-50 px-4 py-4 rounded-lg shadow-sm border-x-4 slide-in-mission ${isVisible ? 'visible' : ''}`}
               style={{ borderLeftColor: '#1B2951', borderRightColor: '#1B2951', transitionDelay: '0.2s' }}>
-              <p className="text-xl text-black leading-relaxed font-semibold">
+              <p className="text-lg sm:text-xl text-black leading-relaxed font-semibold">
                 To connect insurers with the right talent, at the right time, and at the
 right cost — helping our clients build high-performing teams that
 drive growth.
@@ -84,7 +84,7 @@ drive growth.
         <div className="mt-20">
           <div className={`text-center mb-12 slide-in-intro ${isVisible ? 'visible' : ''}`}
             style={{ transitionDelay: '0.4s' }}>
-            <h3 className="text-4xl font-bold leading-tight tracking-tight text-black mb-4">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-tight text-[#1B2951] mb-4">
               Our Values
             </h3>
           </div>
@@ -94,12 +94,12 @@ drive growth.
             <div className={`group hover:transform hover:-translate-y-2 transition-all duration-300 slide-in-card ${isVisible ? 'visible' : ''}`}
               style={{ transitionDelay: '0.6s' }}>
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6 mx-auto" style={{ backgroundColor: '#1B2951' }}>
+                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6 mx-auto" style={{ backgroundColor: '#B99D54' }}>
                   <Shield className="w-8 h-8 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-black mb-4 text-center">Integrity</h4>
+                <h4 className="text-2xl font-bold text-black mb-4 text-center">Integrity</h4>
                 <div className="flex-grow">
-                  <p className="text-black font-semibold text-center leading-relaxed">
+                  <p className="text-[#1B2951] font-semibold text-center leading-relaxed">
                     Transparent processes and ethical hiring practices.
                   </p>
                 </div>
@@ -110,12 +110,12 @@ drive growth.
             <div className={`group hover:transform hover:-translate-y-2 transition-all duration-300 slide-in-card ${isVisible ? 'visible' : ''}`}
               style={{ transitionDelay: '0.7s' }}>
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6 mx-auto" style={{ backgroundColor: '#1B2951' }}>
+                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6 mx-auto" style={{ backgroundColor: '#B99D54' }}>
                   <Handshake className="w-8 h-8 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-black mb-4 text-center">Partnership</h4>
+                <h4 className="text-2xl font-bold text-black mb-4 text-center">Partnership</h4>
                 <div className="flex-grow">
-                  <p className="text-black font-semibold text-center leading-relaxed">
+                  <p className="text-[#1B2951] font-semibold text-center leading-relaxed">
                     Acting as an extension of your HR and Talent Acquisition team.
                   </p>
                 </div>
@@ -126,12 +126,12 @@ drive growth.
             <div className={`group hover:transform hover:-translate-y-2 transition-all duration-300 slide-in-card ${isVisible ? 'visible' : ''}`}
               style={{ transitionDelay: '0.8s' }}>
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6 mx-auto" style={{ backgroundColor: '#1B2951' }}>
+                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6 mx-auto" style={{ backgroundColor: '#B99D54' }}>
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-black mb-4 text-center">Excellence</h4>
+                <h4 className="text-2xl font-bold text-black mb-4 text-center">Excellence</h4>
                 <div className="flex-grow">
-                  <p className="text-black font-semibold text-center leading-relaxed">
+                  <p className="text-[#1B2951] font-semibold text-center leading-relaxed">
                     Every mandate handled with rigor, speed, and quality.
                   </p>
                 </div>

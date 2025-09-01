@@ -121,7 +121,7 @@ const AboutSection: React.FC = () => {
                 <div className="relative w-full flex items-center justify-center">
                     <div className={`bg-gray-50 p-8 rounded-lg shadow-sm border-x-4  max-w-4xl text-center slide-in-intro ${isVisible ? 'visible' : ''}`}
                         style={{ borderLeftColor: '#1B2951', borderRightColor: '#1B2951'}}>
-                        <p className="text-lg text-black leading-relaxed ">
+                        <p className="text-lg sm:text-xl text-black leading-relaxed ">
                             <span className="font-bold" style={{ color: '#1B2951' }}>Founded in 2014</span>,
                             <span className="mx-2 font-bold" style={{ color: '#B99D54' }}>RBG HR Services LLP</span>
                             
@@ -133,10 +133,10 @@ const AboutSection: React.FC = () => {
                 {/* Why RBG HR Section */}
                 <div className="mt-20" ref={sectionRef}>
                     <div className={`text-center mb-12 slide-in-intro ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
-                        <h3 className="text-3xl font-bold leading-tight tracking-tight text-black mb-4">
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-tight text-[#1B2951] mb-4">
                             Why RBG HR ?
                         </h3>
-                        <p className="text-lg text-black font-semibold max-w-6xl mx-auto leading-relaxed">
+                        <p className="text-lg sm:text-xl text-black font-semibold max-w-6xl mx-auto leading-relaxed">
                             We understand the unique challenges and requirements of the insurance industry. Our specialized approach ensures we deliver the right talent at every level, from entry-level positions to executive leadership roles.
                         </p>
                     </div>
@@ -163,30 +163,30 @@ const AboutSection: React.FC = () => {
                                                     <p className="text-gray-700 text-center leading-relaxed">
                                                         {card.title === 'Insurance Focused' && (
                                                             <>
-                                                                <span className="font-semibold" style={{ color: '#1B2951' }}>100% specialization in life, general, and health insurance, along with brokers and intermediaries.</span> 
+                                                                <span className="font-semibold text-lg " style={{ color: '#1B2951' }}>100% specialization in life, general, and health insurance, along with brokers and intermediaries.</span> 
                                                             </>
                                                         )}
                                                         {card.title === 'Proven Experience' && (
                                                             <>
-                                                             <span className="font-semibold" style={{ color: '#1B2951' }}>Over a decade  of expertise with frontline to CXO-level hiring.</span> 
+                                                             <span className="font-semibold text-lg " style={{ color: '#1B2951' }}>Over a decade  of expertise with frontline to CXO-level hiring.</span> 
                                                                
                                                             </>
                                                         )}
                                                         {card.title === 'Speed & Accuracy' && (
                                                             <>
-                                                            <span className="font-semibold" style={{ color: '#1B2951' }}>Structured processes and an active talent network for faster closures.</span> 
+                                                            <span className="font-semibold text-lg " style={{ color: '#1B2951' }}>Structured processes and an active talent network for faster closures.</span> 
                                                                
                                                             </>
                                                         )}
                                                         {card.title === 'Pan-India Reach' && (
                                                             <>
-                                                             <span className="font-semibold" style={{ color: '#1B2951' }}> Hiring capability across metros and tier-2/3 cities</span> 
+                                                             <span className="font-semibold text-lg " style={{ color: '#1B2951' }}> Hiring capability across metros and tier-2/3 cities</span> 
                                                                 
                                                             </>
                                                         )}
                                                         {card.title === 'Affordable Leadership Hiring' && (
                                                             <>
-                                                            <span className="font-semibold" style={{ color: '#1B2951' }}>Retainer model at 1% of CTC</span> 
+                                                            <span className="font-semibold text-lg " style={{ color: '#1B2951' }}>Retainer model at 1% of CTC</span> 
                                                                
                                                             </>
                                                         )}

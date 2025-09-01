@@ -26,7 +26,7 @@ const HeroSection3= () => {
         {/* Headline */}
         <h1 
           className={`
-            text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 
+            text-2xl sm:text-3xl lg:text-4xl
             font-semi-bold text-white mb-8 
             leading-tight tracking-tight text-center
             transition-all duration-1000 ease-out

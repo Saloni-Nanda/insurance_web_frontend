@@ -12,7 +12,7 @@ const Top: React.FC = () => {
     };
 
     const handleLearnMore = () => {
-        navigate('/contact')
+        navigate('/service')
     };
 
     if (!isVisible) {

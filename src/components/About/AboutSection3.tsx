@@ -44,13 +44,13 @@ const AboutSection3: React.FC = () => {
                             : 'opacity-0 -translate-x-20'
                     }`}
                 >
-                    <h1 className="text-5xl font-bold text-[#1B2951] mb-4 relative inline-block">
+                    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1B2951] mb-4 relative inline-block">
                         Meet Our Founder
                         <div className={`absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#1B2951] to-[#B99D54] rounded-full transition-all duration-700 delay-300 ${
                             isHeaderVisible ? 'scale-x-100' : 'scale-x-0'
                         }`}></div>
                     </h1>
-                    <p className={`text-xl text-gray-600 mt-8 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-200 ${
+                    <p className={`text-lg sm:text-xl text-black font-semibold mt-8 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-200 ${
                         isHeaderVisible 
                             ? 'opacity-100 translate-x-0' 
                             : 'opacity-0 -translate-x-10'

@@ -66,9 +66,9 @@ const HeroSection: React.FC = () => {
         {/* Headline */}
         <h1 
           className={`
-            text-3xl sm:text-4xl lg:text-5xl 
+            text-2xl sm:text-3xl lg:text-4xl
             font-semibold text-[#1B2951] mb-8 
-            leading-tight tracking-tight
+            leading-normal
             transition-all duration-1000 ease-out text-center  mx-auto
             ${isVisible 
               ? 'translate-x-0 opacity-100' 
@@ -111,7 +111,7 @@ const HeroSection: React.FC = () => {
           `}
         >
          
-          <Link to='/about'>
+          <Link to='/service'>
             <button 
               className="
                 px-8 py-3.5 bg-white/90 text-[#1B2951] border border-[#B99D54]

@@ -74,7 +74,7 @@ PRECISION AND TRUST": <br />CXO & Senior Recruitment at <span className="text-[#
                             </h3>
 
                             <p
-                                className="text-lg text-black leading-relaxed  font-semibold text-center"
+                                className="text-lg sm:text-xl text-black leading-relaxed  font-semibold text-center"
                                 style={{ fontFamily: "'Roboto', serif" }}
                             >
                                 Our <span className="text-[#B99D54]">Retainer Model</span> ensures affordability without compromising quality.
