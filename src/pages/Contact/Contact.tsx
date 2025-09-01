@@ -436,12 +436,24 @@ const Contact: React.FC = () => {
 
     setTimeout(() => {
       const { fullName, email, company, message } = formData;
-      const subject = `New Contact from ${fullName}`;
-      const body = `Name: ${fullName}\nEmail: ${email}\nCompany: ${company}\n\n${message}`;
 
+      // Custom subject
+      const subject = `Contact Request from ${fullName}`;
+
+      // Custom body with Name, Email, Company, and Message
+      const body = `
+Name: ${fullName}
+Email: ${email}
+Company: ${company}
+
+Message:
+${message}
+      `;
+
+      // Redirect to mail client
       window.location.href = `mailto:info@quotus.co.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-      // Reset form after sending
+      // Reset after sending
       setTimeout(() => {
         setIsSubmitting(false);
         setFormData({
@@ -450,7 +462,7 @@ const Contact: React.FC = () => {
           company: '',
           message: ''
         });
-      }, 2000);
+      }, 3000);
     }, 1000);
   };
 
