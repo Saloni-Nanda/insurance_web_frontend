@@ -238,7 +238,7 @@ const Contact: React.FC = () => {
       showPopup(
         "success",
         "Message Sent Successfully!",
-        "Thank you for reaching out! We will get back to you soon."
+        "Thank you for contacting us. Our team will get back to you shortly."
       );
       setFormData({ fullName: "", email: "", company: "", message: "" });
     } catch (err) {
