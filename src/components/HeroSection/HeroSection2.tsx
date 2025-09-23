@@ -49,7 +49,7 @@ const HeroSection2 = () => {
               `}
                             style={{ fontFamily: "'Roboto', serif" }}
                         >
-                            "Redefining leadership hiring with precision and trust" <br />CXO & Senior Recruitment at <span className="text-[#B99D54]">Just 1% of CTC</span>
+                            "Redefining leadership hiring with precision and trust" <br />CXO & Senior Recruitment at <span className="text-[#B99D54]">Just 2.25% of CTC</span>
                         </h2>
                     </div>
 

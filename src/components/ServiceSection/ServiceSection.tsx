@@ -88,7 +88,7 @@ export default function ServiceSection() {
                 </h3>
 
                 <p className="text-black leading-relaxed mb-2 font-semibold text-lg sm:text-xl">
-                  Leadership talent is critical - but it doesn't have to come at a heavy price. Our retainer-based model delivers CXO and senior leadership hiring at <span className='text-[#B99D54]'>just 1% of CTC</span>, giving insurers access to top executives with affordability and uncompromised quality.
+                  Leadership talent is critical - but it doesn't have to come at a heavy price. Our retainer-based model delivers CXO and senior leadership hiring at <span className='text-[#B99D54]'>just 2.25% of CTC</span>, giving insurers access to top executives with affordability and uncompromised quality.
                 </p>
               </div>
 

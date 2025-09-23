@@ -57,8 +57,8 @@ const AboutSection: React.FC = () => {
         {
             icon: DollarSign,
             title: 'Affordable Leadership Hiring',
-            description: 'Retainer model at 1% of CTC.',
-            highlights: ['1%', 'of CTC'],
+            description: 'Retainer model at 2.25% of CTC.',
+            highlights: ['2.25%', 'of CTC'],
             bgColor: '#B99D54'
         }
     ];
@@ -186,7 +186,7 @@ const AboutSection: React.FC = () => {
                                                         )}
                                                         {card.title === 'Affordable Leadership Hiring' && (
                                                             <>
-                                                            <span className="font-semibold text-lg " style={{ color: '#1B2951' }}>Retainer model at 1% of CTC</span> 
+                                                            <span className="font-semibold text-lg " style={{ color: '#1B2951' }}>Retainer model at 2.25% of CTC</span> 
                                                                
                                                             </>
                                                         )}
